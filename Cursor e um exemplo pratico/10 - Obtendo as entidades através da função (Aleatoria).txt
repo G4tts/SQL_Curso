@@ -1,0 +1,22 @@
+10
+Obtendo as entidades através da função (Aleatoria)
+
+PRÓXIMA ATIVIDADE
+
+Crie uma consulta no Management Studio; declare três variáveis que recebem o produto, cliente e vendedor; e obtenha os valores destas variáveis através da função EntidadeAleatoria, criada no vídeo desta aula.
+
+
+
+Um exemplo de script é:
+
+DECLARE @CLIENTE VARCHAR(20)
+DECLARE @VENDEDOR VARCHAR(20)
+DECLARE @PRODUTO VARCHAR(20)
+
+SET @CLIENTE = [dbo].[EntidadeAleatoria]('CLIENTE')
+SET @VENDEDOR = [dbo].[EntidadeAleatoria]('VENDEDOR')
+SET @PRODUTO = [dbo].[EntidadeAleatoria]('PRODUTO')
+
+PRINT @VENDEDOR
+PRINT @CLIENTE
+PRINT @PRODUTO
